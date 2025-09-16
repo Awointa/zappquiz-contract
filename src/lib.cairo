@@ -3,7 +3,7 @@ pub mod systems {
 }
 
 pub mod models{
-    mod settlement_models;
+    mod settlement;
 }
 
 pub mod tests {
