@@ -7,8 +7,8 @@ pub struct Game{
     pub game_id: felt252,
     pub host: ContractAddress,
     pub title_hash: felt252,
-    pub prize_pool: u252,
-    pub entry_fee: u252,
+    pub prize_pool: u256,
+    pub entry_fee: u256,
     pub max_players: u32,
     pub is_finalized: bool,
     pub created_at: u64
@@ -27,3 +27,15 @@ pub struct FinalScore {
     pub rank: u32,
 }
 
+#[derive(Model, Copy, Drop, Serde)]
+#[dojo::model]
+pub struct GameResult {
+    #[key]
+    pub game_id: felt252,
+    pub total_players:u32,
+    pub winner_count:u32,
+    pub total_prize_distributed: u256,
+    pub results_hash: felt252, // hash of all final scores for verification 
+    pub submitted_by: ContractAddress,
+    pub submitted_at: u64,
+}
