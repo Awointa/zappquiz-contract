@@ -22,4 +22,9 @@ pub struct PrizesClaimed {
     pub winner_count: u32,
 }
 
-
+#[derive(Drop,starknet::Event)]
+pub struct GameFunded {
+    pub game_id: felt252,
+    pub sponsor: ContractAddress,
+    pub amount: u256,
+}
