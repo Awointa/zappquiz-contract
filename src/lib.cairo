@@ -1,5 +1,5 @@
 pub mod systems {
-    pub mod actions;
+    pub mod game_factory_system;
 }
 
 pub mod models{
