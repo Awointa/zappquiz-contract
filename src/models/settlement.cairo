@@ -1,6 +1,6 @@
 use starknet::ContractAddress;
 
-#[derive(Model, Copy, Drop, Serde)]
+#[derive(Copy, Drop, Serde)]
 #[dojo::model]
 pub struct Game{
     #[key]
@@ -14,7 +14,7 @@ pub struct Game{
     pub created_at: u64
 }
 
-#[derive(Model, Copy, Drop, Serde)]
+#[derive(Copy, Drop, Serde)]
 #[dojo::model]
 pub struct FinalScore {
     #[key]
@@ -27,7 +27,7 @@ pub struct FinalScore {
     pub rank: u32,
 }
 
-#[derive(Model, Copy, Drop, Serde)]
+#[derive(Copy, Drop, Serde)]
 #[dojo::model]
 pub struct GameResult {
     #[key]
@@ -40,7 +40,7 @@ pub struct GameResult {
     pub submitted_at: u64,
 }
 
-#[derive(Model, Copy, Drop, Serde)]
+#[derive(Copy, Drop, Serde)]
 #[dojo::model]
 pub struct PlayerClaim {
     #[key]
@@ -53,12 +53,12 @@ pub struct PlayerClaim {
 }
 
 // platform Configuration 
-#[derive(Model, Copy, Drop, Serde)]
+#[derive(Copy, Drop, Serde)]
 #[dojo::model]
 pub struct PlatformConfig {
     #[key]
-    pub id: felt252; //Always 1 for singleton
-    pub platform_fee_bps: u16; //Basisi points
+    pub id: felt252,//Always 1 for singleton
+    pub platform_fee_bps: u16, //Base points
     pub host_fee_bps: u16,
     pub min_prize_pool: u256,
     pub relayer_Address: ContractAddress,
