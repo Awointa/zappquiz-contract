@@ -4,7 +4,6 @@ pub mod systems {
 
 pub mod models{
     pub mod final_score;
-    pub mod player_claim;
     pub mod game_results;   
     pub mod game;
     pub mod platform_config;
@@ -12,8 +11,8 @@ pub mod models{
 }
 
 pub mod interface {
-     pub IGameFactory;
-     pub IFinalSettlement;
+     pub mod i_final_settlement;
+     pub mod i_game_factory;
 }
 
 pub mod events {
