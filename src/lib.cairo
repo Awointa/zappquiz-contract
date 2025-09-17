@@ -3,7 +3,12 @@ pub mod systems {
 }
 
 pub mod models{
-    mod settlement;
+    pub mod final_score;
+    pub mod player_claim;
+    pub mod game_results;   
+    pub mod game;
+    pub mod platform_config;
+    pub mod player_claim;
 }
 
 pub mod interface {
