@@ -1,9 +1,4 @@
-
-
-
-
-
-
+use starknet::ContractAddress;
 
 // platform Configuration 
 #[derive(Copy, Drop, Serde)]
