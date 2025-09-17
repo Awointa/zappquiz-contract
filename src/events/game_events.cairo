@@ -14,3 +14,12 @@ pub struct GameFinalized {
     pub winner_count: u32,
 }
 
+#[derive(Drop,starknet::Event)]
+pub struct PrizesClaimed {
+    pub game_id: felt252,
+    pub total_players: u32,
+    pub total_prize: u256,
+    pub winner_count: u32,
+}
+
+
