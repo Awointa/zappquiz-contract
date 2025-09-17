@@ -16,6 +16,10 @@ pub mod interface {
      pub IFinalSettlement;
 }
 
+pub mod events {
+    pub mod game_events;
+}
+
 pub mod tests {
     mod test_world;
 }
