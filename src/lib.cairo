@@ -11,8 +11,12 @@ pub mod models{
 }
 
 pub mod interface {
-     pub mod i_final_settlement;
-     pub mod i_game_factory;
+     pub mod i_final_settlement{
+        pub trait IFinalSettlement;
+     }
+     pub mod i_game_factory{
+        pub trait IGameFactory;
+     }
 }
 
 pub mod events {
