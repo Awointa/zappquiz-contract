@@ -51,3 +51,16 @@ pub struct PlayerClaim {
     pub claimed: bool,
     pub claimed_at: u64,
 }
+
+// platform Configuration 
+#[derive(Model, Copy, Drop, Serde)]
+#[dojo::model]
+pub struct PlatformConfig {
+    #[key]
+    pub id: felt252; //Always 1 for singleton
+    pub platform_fee_bps: u16; //Basisi points
+    pub host_fee_bps: u16,
+    pub min_prize_pool: u256,
+    pub relayer_Address: ContractAddress,
+
+}
