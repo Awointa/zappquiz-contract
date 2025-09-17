@@ -7,7 +7,8 @@ pub mod models{
 }
 
 pub mod interface {
-     pub IZappQuiz;
+     pub IGameFactory;
+     pub IFinalSettlement;
 }
 
 pub mod tests {
