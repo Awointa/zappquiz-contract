@@ -4,3 +4,4 @@ pub struct PlayerResult {
     pub username_hash: felt252,
     pub final_sore: u128,
 }
+
