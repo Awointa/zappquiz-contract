@@ -10,7 +10,7 @@ pub mod models{
     pub mod player_claim;
 }
 
-pub mod interface {
+pub mod interfaces {
      pub mod i_final_settlement{
         pub trait IFinalSettlement;
      }
