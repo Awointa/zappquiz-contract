@@ -10,15 +10,6 @@ pub mod models{
     pub mod player_claim;
 }
 
-pub mod interfaces {
-     pub mod i_final_settlement{
-        pub trait IFinalSettlement;
-     }
-     pub mod i_game_factory{
-        pub trait IGameFactory;
-     }
-}
-
 pub mod events {
     pub mod game_events;
 }
