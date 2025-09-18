@@ -1,5 +1,5 @@
 #[dojo::contract]
-mod game_factory_system {
+pub mod gameFactorySystem {
     use starknet::{ContractAddress, get_block_timestamp};
     use dojo::event::EventStorage;
     use dojo::model::{ModelStorage};
