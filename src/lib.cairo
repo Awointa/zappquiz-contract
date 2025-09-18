@@ -15,5 +15,5 @@ pub mod events {
 }
 
 pub mod tests {
-    mod test_world;
+    mod test_game_factory;
 }
