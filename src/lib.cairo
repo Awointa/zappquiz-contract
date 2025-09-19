@@ -1,5 +1,5 @@
 pub mod systems {
-    pub mod game_factory_system;
+    pub mod gameFactorySystem;
 }
 
 pub mod models{
@@ -10,10 +10,20 @@ pub mod models{
     pub mod player_claim;
 }
 
+pub mod interfaces {
+    pub mod IGameFactorySystem;
+    pub mod IFinalSettlement;
+}
+
 pub mod events {
     pub mod game_events;
 }
 
+pub mod structs {
+    pub mod helper_structs;
+}
+
 pub mod tests {
+    #[cfg(test)]
     mod test_game_factory;
 }
