@@ -12,3 +12,12 @@ pub struct Game{
     pub is_finalized: bool,
     pub created_at: u64
 }
+
+#[derive(Copy, Drop, Serde)]
+#[dojo::model]
+pub struct GamesByHost {
+    #[key]
+    pub game_id: u64,
+    pub host: ContractAddress,
+    pub created_at: u64,
+}
